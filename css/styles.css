@@ -107,7 +107,6 @@ input:focus {
 ::placeholder {
   font-style: italic;
   text-align: right;
-  padding-right: 20px;
   color: rgb(197, 196, 196);
 }
 
@@ -194,11 +193,16 @@ textarea {
   flex: 1 0 75%;
  }
 
- input[id=zip] {
-  align-self: flex-start;
-  margin-right: 2.5%;
+ #zip {
   margin-left: 0;
+  max-width: 225;
   flex: 0 0 20%;
+}
+
+label[for="zip"] {
+  flex-grow: 0;
+  margin-left: 0;
+  margin-right: 2.5%;
 }
 
 }
