@@ -194,9 +194,11 @@ textarea {
   flex: 1 0 75%;
  }
 
- .zip {
-    max-width: 220px;
-    align-self: flex-start;
- }
+ input[id=zip] {
+  align-self: flex-start;
+  margin-right: 2.5%;
+  margin-left: 0;
+  flex: 0 0 20%;
+}
 
 }
