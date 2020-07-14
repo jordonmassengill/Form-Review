@@ -25,6 +25,11 @@ header {
   text-align: center;
 }
 
+.topdiv {
+  background: rgb(255, 236, 210);
+  margin-top: 0;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -47,8 +52,9 @@ footer {
   text-align: center;
   color: rgb(184, 184, 184);
   font-size: 13px;
-  margin-bottom: 20px;
+  padding: 40px;
   font-style: italic;
+  background: rgb(255, 236, 210);
 }
 
 
@@ -60,7 +66,8 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  padding-top: 15px;
+  padding-top: 25px;
+  margin-top: 0;
 }
 
 
@@ -121,7 +128,6 @@ option:first-child {
 
 .newsletter {
   padding: 0 20px;
-  display: flex;
 }
 
 .news {
@@ -191,9 +197,20 @@ textarea {
  input[type=number],
  input[type=email],
  input[type=tel] {
-   margin: 10px 0;
-   flex: 1 0 75%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-right: 20%;
+   flex: 1 0 55%;
+   transition: ease-in, flex-basis 1s, margin 1s;
  }
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+  flex-basis: 75%;
+  margin-right: 0;
+}
 
  .statess {
   margin: 10px 0;
@@ -202,7 +219,6 @@ textarea {
 
  #zip {
   margin-left: 0;
-  max-width: 225;
   flex: 0 0 20%;
 }
 
