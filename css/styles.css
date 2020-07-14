@@ -31,7 +31,7 @@ header {
   flex: 0 0 25em;
 }
 
-fieldset {
+.flex {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
@@ -104,6 +104,10 @@ input:focus {
   border-color: rgb(0, 103, 134);
 }
 
+fieldset {
+  border: none;
+}
+
 ::placeholder {
   font-style: italic;
   text-align: right;
@@ -117,6 +121,7 @@ option:first-child {
 
 .newsletter {
   padding: 0 20px;
+  display: flex;
 }
 
 .news {
@@ -167,7 +172,7 @@ textarea {
     width: 100%;
   }
 
- fieldset {
+ .flex {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -183,7 +188,9 @@ textarea {
  }
 
  input[type=text],
- input[type=number] {
+ input[type=number],
+ input[type=email],
+ input[type=tel] {
    margin: 10px 0;
    flex: 1 0 75%;
  }
@@ -203,6 +210,10 @@ label[for="zip"] {
   flex-grow: 0;
   margin-left: 0;
   margin-right: 2.5%;
+}
+
+.btn {
+  width: 100%;
 }
 
 }
